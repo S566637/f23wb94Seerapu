@@ -5,5 +5,15 @@ block content
   p Welcome to Thailand, Sawasdee Kaa!
 
   // Change the button to use Bootstrap styles
-  button(type="button", class="btn btn-primary") Press Me
+  button(type="button", class="btn btn-primary", onclick='goFaster()') Press Me
+  div(id="faster") MPH xx change xx.
+  script.
+      var mph = 20;
+      var change = 1;
+      function goFaster(){
+        mph = mph + change;
+        change = change + 1;
+        document.getElementById("faster").innerHTML = `MPH ${mph} change ${change}`;
+      }
+  
 
