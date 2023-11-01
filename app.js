@@ -36,6 +36,21 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
-});
+  });
+  app.get('/dogs', (req, res) => {
+    // Fetch dogs data from a database or a predefined list
+    const dogs = [
+      { breed: 'Labrador', age: 3, name: 'Buddy' },
+      { breed: 'German Shepherd', age: 2, name: 'Max' },
+      // Add more dog objects as needed
+    ];
+  
+    res.render('dogs', {
+      title: 'Search Results - Dogs',
+      dogs: dogs,
+    });
+  });
+  
+
 
 module.exports = app;
