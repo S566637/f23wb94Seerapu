@@ -5,6 +5,7 @@ const router = express.Router();
 const dogs = [
   { breed: 'Labrador', age: 3, name: 'Buddy' },
   { breed: 'German Shepherd', age: 2, name: 'Max' },
+  { breed: 'Dalmatian', age: 5, name: 'Puppy' }
   // Add more dog objects as needed
 ];
 

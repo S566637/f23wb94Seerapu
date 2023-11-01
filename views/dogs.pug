@@ -2,5 +2,23 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{welcome_to_thailand}
-  
+  div(class="container")
+     div(class="row")
+        div(class="col-sm-2")=dogs[0].name
+              
+        div(class="col-sm-2")=dogs[0].breed      
+              
+        div(class="col-sm-2")=dogs[0].age      
+              
+        div(class="col-sm-2")=dogs[1].name     
+              
+        div(class="col-sm-2")= dogs[1].breed    
+              
+        div(class="col-sm-2")= dogs[1].age
+
+        div(class="col-sm-2")= dogs[2].name    
+              
+        div(class="col-sm-2")= dogs[2].breed    
+              
+        div(class="col-sm-2")=  dogs[2].age   
+             
