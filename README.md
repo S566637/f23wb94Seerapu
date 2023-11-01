@@ -7,4 +7,4 @@ You can access the live version of this project on Render:
 [View on Render](https://f23wb94seerapu.onrender.com)
 
 ## Choosen Class: dogs
--Attributes: Name(String), Breed(String), Price(Number)
+-Attributes: breed(String), age(Number), name(String)
